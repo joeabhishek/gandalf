@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="css/app.css" rel="stylesheet">
+		<script type="text/javascript"
+	      	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwuDlij7GHsu7E4AuqsXvlNnl9Gt2KYVE">
+	    </script>
+	    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+	    <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div id="sample">
+					<div class="col-md-1">
+						<i class="fa fa-bars fa-back"></i>
+					</div>
+					<div class="col-md-8 page-heading">
+						<span class="">Tour Guide</span>
+					</div>
+				</div>
+			</div>
+			<div id="route-info">
+				<section class="card" id="route-info-card">
+					<ul class="nav nav-tabs nav-justified" id="transit-mode">
+  						<li class="active" data-value="DRIVING"><a href="#"><i class="fa fa-car"></i></a></li>
+  						<li data-value="CYCLING"><a href="#"><i class="fa fa-paw"></i></a></li>
+  						<li data-value="WALKING"><a href="#"><i class="fa fa-male"></i></a></li>
+					</ul>
+					<div>
+						<form id="route-info-form">
+							<input type="text" id="from-input" value="My Location"><br>
+							<input type="text"  id="destination-input" placeholder=" Choose Destination..."><br>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div>
+			<section class="card" id="map-card">
+				<div id="map-canvas"></div>
+			</section>
+		</div>
+		<div class="" id="direction-details-card">
+			<section class="card direction-info-card" id="distance-card" >
+				<p class="direction-text" id="distance-text"><span class="thin-font" id="distance-value">12 <span class="bold">km</span></span></p><p id="direction-detail-label">Distance</p>
+			</section>
+			<section class="card direction-info-card" id="duration-card" >
+				 <p class="direction-text" id="duration-text"><span class="thin-font" id="duration-value">2 <span class="bold">mins</span></span></p><p id="direction-detail-label">Duration</p>
+			</section>
+		</div>
+		<div>
+			<section class="card" id="places-nearby-card">
+				<h1>Places Nearby</h1><hr>
+				<div id="places-list-div">
+					<div class="places-list-item">
+						<span class="places-list-2" data-ordinates="17.72941,83.31347000000005"> Sony Centre</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+						</span><br>
+					</div>
+					<div class="places-list-item">
+						<span class="places-list-2" data-ordinates="17.723759,83.31822799999998"> Subway - Eat fresh</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+							<i class="fa fa-star-o"></i>
+						</span><br>
+					</div>
+					<div class="places-list-item">
+						<span class="places-list-2" data-ordinates="17.724493,83.31241799999998"> Sampath Vinayaka Temple</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</span><br>
+					</div>
+					<div class="places-list-item">
+						<span class="places-list-2" data-ordinates="17.72921,83.31329099999994"> Reliance Foot Prints</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</span><br>
+					</div>
+					<div class="places-list-item">
+						<span class="places-list-2" data-ordinates="17.724192,83.31761699999993"> Mom &amp; Me</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+						</span>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

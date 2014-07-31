@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="css/app.css" rel="stylesheet">
+		<link href="css/jquery.raty.css" rel="stylesheet">
+		<script type="text/javascript"
+	      	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwuDlij7GHsu7E4AuqsXvlNnl9Gt2KYVE">
+	    </script>
+	    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+	    <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.raty.js"></script>
+		<script src="js/places.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div id="sample">
+					<div class="col-md-1">
+						<i class="fa fa-bars fa-back"></i>
+					</div>
+					<div class="col-md-8 page-heading">
+						<span class="">Explorer</span>
+					</div>
+					<div class="col-md-3">
+						<i class="fa fa-search pull-right search-icon"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- 		<div>
+			<section class="card" id="map-card">
+				<div id="map-canvas"></div>
+			</section>
+		</div> -->
+		<div>
+			<section class="card" id="category-list-card">
+				<span>
+					<ul class="category-list">
+						<li class="category">
+							<div class="row">
+								<div class="col-md-1"><i class="fa fa-cutlery"></i></div>
+								<div class="col-md-11 category-text">Restaurants</div>
+							</div>
+						</li><hr>
+						<li class="category">
+							<div class="row">
+								<div class="col-md-1"><i class="fa fa-glass"></i></div>
+								<div class="col-md-11 category-text">Bars</div>
+							</div>
+						</li><hr>
+						<li class="category">
+							<div class="row">
+								<div class="col-md-1"><i class="fa fa-coffee"></i></div>
+								<div class="col-md-11 category-text">Coffee & Tea</div>
+							</div>
+						</li><hr>
+						<li class="category">
+							<div class="row">
+								<div class="col-md-1"><i class="fa fa-shopping-cart"></i></div>
+								<div class="col-md-11 category-text">Malls</div>
+							</div>
+						</li><hr>
+						<li class="category">
+							<div class="row">
+								<div class="col-md-1"><i class="fa fa-university"></i></div>
+								<div class="col-md-11 category-text">Bank and Credit Stores</div>
+							</div>
+						</li><hr>
+						<li class="category">
+							<div class="row">
+								<div class="col-md-1"><i class="fa fa-gift"></i></div>
+								<div class="col-md-11 category-text">Gift Shops</div>
+							</div>
+						</li>
+					</ul>
+				</span>
+			</section>
+			<section class="card" id="places-nearby-card-2">
+				<span class="card-heading">Places Nearby</span><hr>
+				<div id="places-list-div">
+					<div class="">
+						<span class="places-list-2">Sony Center</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+						</span>
+						<br><span class="place-desc">Electronics Store<br>Ramatalkies, Visakhapatnam</span><hr>
+					</div>
+					<div class="">
+						<span class="places-list-2">Sony Center</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+							<i class="fa fa-star-o"></i>
+						</span>
+						<br><span class="place-desc">Electronics Store<br>Ramatalkies, Visakhapatnam</span><hr>
+					</div>
+					<div class="">
+						<span class="places-list-2">Sony Center</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</span>
+						<br><span class="place-desc">Electronics Store<br>Ramatalkies, Visakhapatnam</span><hr>
+					</div>
+					<div class="">
+						<span class="places-list-2">Sony Center</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</span>
+						<br><span class="place-desc">Electronics Store<br>Ramatalkies, Visakhapatnam</span>
+					</div><hr>
+					<div class="">
+						<span class="places-list-2">Sony Center</span>
+						<span class="rating-stars">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+						</span>
+						<br><span class="place-desc">Electronics Store<br>Ramatalkies, Visakhapatnam</span>
+					</div>					
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

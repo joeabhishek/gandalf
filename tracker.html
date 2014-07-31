@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="css/app.css" rel="stylesheet">
+		<link href="css/jquery.raty.css" rel="stylesheet">
+		<script type="text/javascript"
+	      	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwuDlij7GHsu7E4AuqsXvlNnl9Gt2KYVE">
+	    </script>
+	    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+	    <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.raty.js"></script>
+		<script src="js/tracker.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div id="sample">
+					<div class="col-md-1">
+						<i class="fa fa-bars fa-back"></i>
+					</div>
+					<div class="col-md-8 page-heading">
+						<span class="">Bus Tracker</span>
+					</div>
+					<div class="col-md-3">
+						<i class="fa fa-search pull-right search-icon"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<section class="card" id="map-card">
+				<div class="map-heading"> Route to Boarding Point </div>
+				<div>
+					<ul class="nav nav-tabs nav-justified" id="transit-mode">
+						<li class="active" data-value="DRIVING"><a href="#"><i class="fa fa-car"></i></a></li>
+						<li data-value="CYCLING"><a href="#"><i class="fa fa-paw"></i></a></li>
+						<li data-value="WALKING"><a href="#"><i class="fa fa-male"></i></a></li>
+					</ul>
+				</div>
+				<div id="map-canvas"></div>
+				<div class="row direction-details">
+					<div class="col-md-6">Distance <i class="fa fa-long-arrow-right"></i> 12<span class="bold"> KM</span></div>
+					<div class="col-md-6 pull-right distance-matrix">Duration <i class="fa fa-long-arrow-right"></i> 20<span class="bold"> mins</span></div>
+				</div>
+			</section>
+		</div>
+
+		<div>
+			<section class="card" id="tracker-card">
+				<span class="thin-font">Bus Tracking Information</span><hr>
+				<div class="row">
+					<div class="col-md-1"><i class="fa fa-circle-thin"></i></div>
+					<div class="col-md-11 thin-font">Point of origin</div><br>
+				</div>
+				<div class="row vertical-line-1"><span class="tracking-information reached">Reached at 4:42pm</span></div>
+				<div class="row">
+					<div class="col-md-1"><i class="fa fa-circle-thin"></i></div>
+					<div class="col-md-11 thin-font">Stop 1</div><br>
+				</div>
+				<div class="row vertical-line-1"><span class="tracking-information reached">Reached at 4:49pm</span></div>
+				<div class="row">
+					<div class="col-md-1"><i class="fa fa-circle-thin"></i></div>
+					<div class="col-md-11 thin-font">Stop 2</div><br>
+				</div>
+				<div class="row vertical-line-2 "><span class="tracking-information reached">Reached at 5:14pm</span></div>
+				<div class="row">
+					<div class="col-md-1"><i class="fa fa-circle-thin"></i></div>
+					<div class="col-md-11 thin-font">Stop 3</div><br>
+				</div>
+				<div class="row vertical-line-3"><span class="tracking-information not-reached">Expected arrival at 5:28pm</span></div>
+				<div class="row">
+					<div class="col-md-1"><i class="fa fa-circle-thin"></i></div>
+					<div class="col-md-11 thin-font">Boarding Point</div><br>
+				</div>
+				<div class="row vertical-line-4"><span class="tracking-information not-reached">Expected arrival at 5:42pm</span>
+			</section>
+		</div>
+	</body>
+</html>
