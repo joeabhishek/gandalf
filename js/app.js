@@ -121,9 +121,13 @@ function displayDirectionDetails(response, status){
 		var destinations = response.destinationAddresses;
 
 		for (var i = 0; i < origins.length; i++) {
-			var results = response.rows[i].elements;
-			$('#distance-value').html(results[0].distance.text);
-			$('#duration-value').html(results[0].duration.text);
+			var results = response.rows[i].elements,
+				distance = results[0].distance.text,
+				duration = results[0].duration.text,
+				distanceval = parseFloat(distance, 10),
+				durationnum = parseFloat(duration, 10);
+			$('#distance-value').html(distanceval);
+			$('#duration-value').html(durationnum);
 			for (var j = 0; j < results.length; j++) {
 				var element = results[j];
 				var distance = element.distance.text;

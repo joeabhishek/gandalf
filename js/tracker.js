@@ -36,7 +36,7 @@ function initialize() {
 		center: new google.maps.LatLng(17.726217, 83.315470),
 		zoom: 15
 	};
-	map = new google.maps.Map(document.getElementById("map-canvas"),
+	map = new google.maps.Map(document.getElementById("map-canvas-2"),
 		mapOptions);
 	directionsDisplay.setMap(map);
 	searchPlacesNearby(map);
